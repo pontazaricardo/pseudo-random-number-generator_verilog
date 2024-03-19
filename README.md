@@ -106,8 +106,7 @@ By following the steps below, the suite will generate the output result.
 
 ![Run example](https://raw.githubusercontent.com/pontazaricardo/pseudo-random-number-generator_verilog/main/gifs/NIST_gif/NIST_suite_result_04.gif)
 
-The results of the statistical tests are output in the [finalAnalysisReport.txt](main/NIST/sts-2.1.2/experiments
-/AlgorithmTesting/finalAnalysisReport.txt) file.
+The results of the statistical tests are output in the [finalAnalysisReport.txt](main/NIST/sts-2.1.2/experiments/AlgorithmTesting/finalAnalysisReport.txt) file.
 
 ### Interpretation of the Results
 
