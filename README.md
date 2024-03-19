@@ -12,4 +12,24 @@ The [main](main/) directory in this repository consists of three sections:
 
 ## Verilog Modules
 
-Both the `Generator.v` and the `XORShifter.v` are tested using the `generator_testbench.v` and the `xorshifter_testbench.v` testbench, respectively. 
+Both the `Generator.v` and the `XORShifter.v` are tested using the `generator_testbench.v` and the `xorshifter_testbench.v` testbench, respectively. Both modules have input and output:
+```verilog
+input [31:0] seed;
+output [31:0] generatedRandom;
+```
+meaning that they produce 32-bits random numbers. The output is fed back as input to keep generating random numbers. Example of this is shown in the `generator_testbench.v` testbench:
+```verilog
+reg [31:0] recurrentSeed;
+wire [31:0] generatedRandom;
+    
+Generator generator (recurrentSeed, generatedRandom);
+
+initial begin
+    
+    #0 recurrentSeed = 32'd20240301;
+    forever
+    #10 recurrentSeed = generatedRandom;
+end
+```
+where the ouptput is fed back to the `Generator.v` as a new input every 10 nanoseconds.
+
