@@ -89,3 +89,5 @@ int main() {
 ## Randomness Verification
 
 The [NIST Statistical Test Suite sts-2.1.2](main/NIST/sts-2.1.2) was included to test the randomness of the outputs of both modules.
+
+![Run example](gifs/NIST_gif/NIST_suite_result_04.gif?raw=true)
