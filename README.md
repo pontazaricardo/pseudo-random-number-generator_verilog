@@ -33,3 +33,14 @@ end
 ```
 where the ouptput is fed back to the `Generator.v` as a new input every 10 nanoseconds.
 
+### Notes
+
+There are two important notes for the verilog modules:
+1. The static initial seed 20240301 was used in both testbenches. This static initial seed is also used in the [c-implementation](main/c-implementation) for replication and simulation purposes. In case this seed is modified in the testbenches, it must be modified in the [c-implementation](main/c-implementation) as well to generate the same values.
+2. The `XORShifter.v` has the following structure
+```verilog
+wire [31:0] step01 = seed ^ seed >> 7;
+wire [31:0] step02 = step01 ^ step01 << 9;
+assign generatedRandom  = step02 ^ step02 >>13;
+```
+where there are shifts in 7, 9 and 13 bits. These numbers were selected as it **shakes** the bits in the wire, while keeping most of the bits in the middle. Different values can generate different quality of random numbers.
