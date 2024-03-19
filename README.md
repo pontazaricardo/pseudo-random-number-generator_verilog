@@ -91,3 +91,14 @@ int main() {
 The [NIST Statistical Test Suite sts-2.1.2](main/NIST/sts-2.1.2) was included to test the randomness of the outputs of both modules.
 
 ![Run example](gifs/NIST_gif/NIST_suite_result_04.gif?raw=true)
+
+### Interpretation of the Results
+
+
+| C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 |C10 | P-VALUE | PROPORTION | STATISTICAL TEST |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 185 | 153 | 172 | 0 | 146 | 0 | 0 | 215 | 0 | 129 | 0.000000 | 987/1000 | `Frequency` |
+| 119 | 205 | 90 | 169 | 0 | 141 | 90 | 70 | 66 | 50 | 0.000000 | 997/1000 | `BlockFrequency` |
+| 117 | 92 | 87 | 103 | 145 | 109 | 0 | 141 | 153 | 53 | 0.000000 | 987/1000 | `CumulativeSums` |
+| 119 | 147 | 26 | 140 | 128 | 143 | 0 | 164 | 82 | 51 | 0.000000 | 986/1000 | `CumulativeSums` |
+|  82 | 180 | 77 | 40 | 155 | 69 | 38 | 128 | 104 | 127 | 0.000000 | 987/1000 | `Runs` |
