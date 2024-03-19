@@ -110,6 +110,7 @@ The results of the statistical tests are output in the [finalAnalysisReport.txt]
 
 ### Interpretation of the Results
 
+The [finalAnalysisReport.txt](main/NIST/sts-2.1.2/experiments/AlgorithmTesting/finalAnalysisReport.txt) file contains a table with the tests names and the proportion of how many bitstreams passed each test.
 
 | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 |C10 | P-VALUE | PROPORTION | STATISTICAL TEST |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -118,3 +119,16 @@ The results of the statistical tests are output in the [finalAnalysisReport.txt]
 | 117 | 92 | 87 | 103 | 145 | 109 | 0 | 141 | 153 | 53 | 0.000000 | 987/1000 | `CumulativeSums` |
 | 119 | 147 | 26 | 140 | 128 | 143 | 0 | 164 | 82 | 51 | 0.000000 | 986/1000 | `CumulativeSums` |
 |  82 | 180 | 77 | 40 | 155 | 69 | 38 | 128 | 104 | 127 | 0.000000 | 987/1000 | `Runs` |
+
+A detailed description of all four statistical tests is shown [here](https://csrc.nist.gov/Projects/random-bit-generation/Documentation-and-Software/Guide-to-the-Statistical-Tests). In the report, you can find the following comment
+```
+The minimum pass rate for each statistical test with the exception of the
+random excursion (variant) test is approximately = 980 for a
+sample size = 1000 binary sequences.
+```
+So, in order for a test to be considered as `passed`, a proportion of minimum 980/10000 must be returned.
+
+## Conclusions and Future Work
+
+
+
