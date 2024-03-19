@@ -126,7 +126,7 @@ The minimum pass rate for each statistical test with the exception of the
 random excursion (variant) test is approximately = 980 for a
 sample size = 1000 binary sequences.
 ```
-So, in order for a test to be considered as `passed`, a proportion of minimum 980/10000 must be returned.
+So, in order for a test to be considered as `passed`, a **minimum proportion of 980/10000 must be returned**.
 
 ## Conclusions and Future Work
 
