@@ -88,9 +88,25 @@ int main() {
 ```
 ## Randomness Verification
 
-The [NIST Statistical Test Suite sts-2.1.2](main/NIST/sts-2.1.2) was included to test the randomness of the outputs of both modules.
+The [NIST Statistical Test Suite sts-2.1.2](main/NIST/sts-2.1.2) was included to test the randomness of the outputs of both modules. 
+Inside the [sts-2.1.2](main/NIST/sts-2.1.2) folder:
+1. Copy the `test.txt` and `test02.txt obtained from the [c-implementation](main/c-implementation).
+2. Clean and rebuild, by running
+```bash
+$ make clean
+$ make
+```
+3. A new `assess` executable will be created. Execute it by calling
+```bash
+$ ./assess 32
+```
+where 32 is the bitstreams length (32 bits).
+4. Follow the steps below, and it will generate the output result.
 
 ![Run example](https://raw.githubusercontent.com/pontazaricardo/pseudo-random-number-generator_verilog/main/gifs/NIST_gif/NIST_suite_result_04.gif)
+
+The results of the statistical tests are output in the [finalAnalysisReport.txt](main/NIST/sts-2.1.2/experiments
+/AlgorithmTesting/finalAnalysisReport.txt) file.
 
 ### Interpretation of the Results
 
