@@ -43,4 +43,14 @@ wire [31:0] step01 = seed ^ seed >> 7;
 wire [31:0] step02 = step01 ^ step01 << 9;
 assign generatedRandom  = step02 ^ step02 >>13;
 ```
-where there are shifts in 7, 9 and 13 bits. These numbers were selected as it **shakes** the bits in the wire, while keeping most of the bits in the middle. Different values can generate different quality of random numbers.
+where there are shifts of 7, 9 and 13 bits. These numbers were selected as it **shakes** the bits in the wire, while keeping most of the bits in the middle. Different values can generate different quality of random numbers.
+
+## Verilog Testbench Waveform
+
+When running the testbenches `generator_testbench.v` and `xorshifter_testbench.v`, both generate their respective waveform. By default, the inputs and outputs are displayed in hexadecimal. This can be changed to Decimal by:
+1. Adding the variables to the simulation.
+2. Change the Radix to *unsigned integer*.
+3. Relaunch the simulation.
+
+![generator_testbench.v](/gifs/Verilog_gif/generator_testbench.gif?raw=true)
+
