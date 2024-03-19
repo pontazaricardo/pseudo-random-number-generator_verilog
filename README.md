@@ -83,6 +83,9 @@ int main() {
     for(int i=0;i<1000;i++){ // <=== Change here
         ...
     }
+    ...
 }
 ```
-## 
+## Randomness Verification
+
+The [NIST Statistical Test Suite sts-2.1.2](main/NIST/sts-2.1.2) was included to test the randomness of the outputs of both modules.
