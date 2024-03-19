@@ -101,7 +101,8 @@ $ make
 $ ./assess 32
 ```
    where 32 is the bitstreams length (32 bits).
-4. Follow the steps below, and it will generate the output result.
+
+By following the steps below, the suite will generate the output result.
 
 ![Run example](https://raw.githubusercontent.com/pontazaricardo/pseudo-random-number-generator_verilog/main/gifs/NIST_gif/NIST_suite_result_04.gif)
 
