@@ -73,4 +73,16 @@ $ ./generator
 ```
 This will output two files: `test.txt` and `test02.txt`, with the outputs of `Generator.v` and the `XORShifter.v`, respectively.
 
-![Run example](/gifs/c-implementation_gif/c-implementation.gif?raw=true)
+![Run example](https://raw.githubusercontent.com/pontazaricardo/pseudo-random-number-generator_verilog/main/gifs/c-implementation_gif/c-implementation.gif)
+
+If you want to generate more than 1,000 bitstreams, in the `generator.c` file, modify the limit in the cycle:
+
+```c
+int main() {
+    ...
+    for(int i=0;i<1000;i++){ // <=== Change here
+        ...
+    }
+}
+```
+## 
