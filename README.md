@@ -28,7 +28,7 @@ initial begin
     
     #0 recurrentSeed = 32'd20240301;
     forever
-    #10 recurrentSeed = generatedRandom;
+    #10 recurrentSeed = generatedRandom;    // <== Feed-back loop
 end
 ```
 where the ouptput is fed back to the `Generator.v` as a new input every 10 nanoseconds.
