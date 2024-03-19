@@ -53,8 +53,10 @@ When running the testbenches `generator_testbench.v` and `xorshifter_testbench.v
 3. Relaunch the simulation.
 
 This will yield in the `generator_testbench.v` waveform:
+
 ![Run example](https://raw.githubusercontent.com/pontazaricardo/pseudo-random-number-generator_verilog/main/gifs/Verilog_gif/generatorTestbench.gif)
 
 and in the `xorshifter_testbench.v` waveform:
-![Run example](/gifs/Verilog_gif/xorshifterTestbench.gif?raw=true)
+
+![Run example](https://raw.githubusercontent.com/pontazaricardo/pseudo-random-number-generator_verilog/main/gifs/Verilog_gif/xorshifterTestbench.gif)
 
