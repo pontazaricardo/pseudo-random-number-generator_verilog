@@ -52,5 +52,5 @@ When running the testbenches `generator_testbench.v` and `xorshifter_testbench.v
 2. Change the Radix to *unsigned integer*.
 3. Relaunch the simulation.
 
-![Run example](/gifs/Verilog_gif/generatorTestbench.gif?raw=true)
+![Run example](https://raw.githubusercontent.com/pontazaricardo/pseudo-random-number-generator_verilog/main/gifs/Verilog_gif/generatorTestbench.gif)
 
