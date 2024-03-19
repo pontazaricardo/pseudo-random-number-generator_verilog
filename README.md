@@ -52,5 +52,5 @@ When running the testbenches `generator_testbench.v` and `xorshifter_testbench.v
 2. Change the Radix to *unsigned integer*.
 3. Relaunch the simulation.
 
-![generator_testbench.v](gifs/Verilog_gif/generator_testbench.gif?raw=true)
+![Run example](/gifs/Verilog_gif/generator_testbench.gif?raw=true)
 
