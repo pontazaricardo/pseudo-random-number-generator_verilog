@@ -2,7 +2,7 @@
 
 A [c-implementation](../../main/c-implementation) was added as well to simulate 1,000 bitstreams that will be output by both the `Generator.v` and the `XORShifter.v` modules.
 To run it:
-1. Go to the [c-implementation](../../main/c-implementation) folder
+1. Inside the [c-implementation](../../main/c-implementation) folder
 2. Run
 ```bash
 $ make clean
