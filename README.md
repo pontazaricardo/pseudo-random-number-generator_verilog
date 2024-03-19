@@ -130,5 +130,18 @@ So, in order for a test to be considered as `passed`, a proportion of minimum 98
 
 ## Conclusions and Future Work
 
+Implementing a pseudo-random number generator in Verilog involves selecting an appropriate algorithm, designing the module, implementing the algorithm, testing, synthesis, and integration. Understanding the characteristics of different pseudo-random generating algorithms and their suitability for the target application is crucial. By following systematic design and verification methodologies, we created efficient and reliable PRNGs in Verilog that can be used in various digital design applications.
 
+After the design is done, it is also imperative to test for the quality of the generated randomness. Tools like the [NIST Statistical Test Suite sts-2.1.2](main/NIST/sts-2.1.2) and similar can provide with testing environments to create efficient, robust and top-quality designs.
+
+For future work, we would like
+
+### Synthesis and Optimization
+When having a physical board, we would like to synthesize the Verilog code targeting the desired hardware platform. After the synthesis is done, design optimizations for area, speed, and power efficiency based on the target application requirements can be done.
+
+### Integration and Deployment
+We would like to integrate the generated modules into the larger modules where random numbers are required. Additionally, we would like to explore the usage of physical phenomena like electric noise as [feedback](https://en.wikipedia.org/wiki/Feedback) for the modules, as also [random salts](https://en.wikipedia.org/wiki/Salt_(cryptography)) in the calculation process to add additional randomness.
+
+### Scalability to 64-bits
+Currently, both modules present a 32-bit architecture. The modules can be modified to be 64-bits (but as we wanted to address a majority of devices, a 32-bit design was selected). Bitstreams of 64-bits and longer can be generated with both the `Generator.v` and the `XORShifter.v`, but additional tests would be required to test the randomness of such outputs.
 
