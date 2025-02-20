@@ -90,7 +90,7 @@ int main() {
 
 The [NIST Statistical Test Suite sts-2.1.2](main/NIST/sts-2.1.2) was included to test the randomness of the outputs of both modules. 
 Inside the [sts-2.1.2](main/NIST/sts-2.1.2) folder:
-1. Copy the `test.txt` and `test02.txt obtained from the [c-implementation](main/c-implementation).
+1. Copy the `test.txt` and `test02.txt` obtained from the [c-implementation](main/c-implementation).
 2. Clean and rebuild, by running
 ```bash
 $ make clean
